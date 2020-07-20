@@ -5,7 +5,7 @@ if(array_key_exists('email',$_POST)OR array_key_exists('password',$_POST))
     $link=mysqli_connect("localhost","root","","users");
 
 if(mysqli_connect_error()){
-   die("There was an error connecting to the database"); 
+   die("There was an error connecting to the database."); 
 }
     if($_POST['email']==''){
         echo"<p>Email address is required.</p>";
